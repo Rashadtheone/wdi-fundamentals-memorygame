@@ -4,10 +4,13 @@ var cardsInPlay = [];
 
 var checkForMatch = function() {
     if (cardsInPlay[0] === cardsInPlay[1]) {
-        alert("You found a match!");
+        alert("You found a match!")
+        } else if(cardsInPlay.length !== 2){
+        console.log("You need another card bro.")
         } else {
-        alert("Sorry, try again.");
+        alert("Sorry, try again.")
         }
+
 }
 
 var flipcard = function(cardId) { 
